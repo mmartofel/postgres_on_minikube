@@ -1,5 +1,17 @@
+Purpose of that repository is to showcase how to create PostgreSQL service (POD) on locally installed Minikube instance.
 
+First you need to have VirtualBox installed to host Minikube virtual machine.
+Then please follow instructions of how to successfully install and setup Minikube itself.
 
+https://kubernetes.io/docs/tasks/tools/install-minikube/
+
+Once ready simply fire run.sh script to kick all the steps required. At the end of the process psql command to get to the PostgreSQL database will be shown.
+
+One complete with your testing simply run 7_cleanup.sh to delete all the components related to your PostgeSQL service.
+
+Have fun !!!
+
+```
 myhost ◯ : ./run.sh
 
 ------------------------------------------------------------------------------------------
@@ -98,3 +110,5 @@ pivotal=# \d
 (1 row)
 
 pivotal=#
+```
+
